@@ -156,7 +156,7 @@ async def __admit(admission_request: AdmissionRequest, session: aiohttp.ClientSe
     return get_admission_review(
         admission_request.uid,
         True,
-        patch=[patch for patch in patches.result() if patch],
+        None,
     )
 
 
